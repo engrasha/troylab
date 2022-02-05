@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "87fef3b3-1b29-48ff-800a-5fa2962426f8",
+		"name": "troylab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Regist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"new student\",\r\n    \"username\" : \"stu\",\r\n    \"password\" : \"123456789\",\r\n    \"school_id\" : 1\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/troylab/api/regist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"regist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"stu\",\r\n    \"password\" : \"123456789\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/troylab/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "beaer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Ryb3lsYWIvYXBpL2xvZ2luIiwiaWF0IjoxNjQ0MDA3MjcwLCJleHAiOjE2NDQwMTA4NzAsIm5iZiI6MTY0NDAwNzI3MCwianRpIjoidDZhdDdRTEV5M3Iya0J2dCIsInN1YiI6MjAsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uEB38oWmi6f_jIzc_uEXPesfl45hUbg4pKDcexZUiJo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/troylab/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "beaer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Ryb3lsYWIvYXBpL2xvZ2luIiwiaWF0IjoxNjQ0MDA3MjcwLCJleHAiOjE2NDQwMTA4NzAsIm5iZiI6MTY0NDAwNzI3MCwianRpIjoidDZhdDdRTEV5M3Iya0J2dCIsInN1YiI6MjAsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uEB38oWmi6f_jIzc_uEXPesfl45hUbg4pKDcexZUiJo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"new student\",\r\n    \"username\" : \"studenttttttt\",\r\n    \"school_id\" : 1\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/troylab/api/update/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"update",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Ryb3lsYWIvYXBpL2xvZ2luIiwiaWF0IjoxNjQ0MDEwNTM2LCJleHAiOjE2NDQwMTQxMzYsIm5iZiI6MTY0NDAxMDUzNiwianRpIjoiaGJybndaNUY5NEFDWjRhQyIsInN1YiI6MTEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.AkMsWWhzQlC8d2fENFOBqNTHtCf2JLENeUCRSQXHbCo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/troylab/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Schools",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/troylab/api/schools",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"schools"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Exam",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Ryb3lsYWIvYXBpL2xvZ2luIiwiaWF0IjoxNjQ0MDEwNTM2LCJleHAiOjE2NDQwMTQxMzYsIm5iZiI6MTY0NDAxMDUzNiwianRpIjoiaGJybndaNUY5NEFDWjRhQyIsInN1YiI6MTEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.AkMsWWhzQlC8d2fENFOBqNTHtCf2JLENeUCRSQXHbCo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/troylab/api/exam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troylab",
+								"api",
+								"exam"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
